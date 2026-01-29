@@ -56,8 +56,8 @@
       "date": "2026-01-30",
       "title": "Vendredi 30/01/2026",
       "study": {
-        "workTitle": "Étude biblique (exemple)",
-        "chapterOrTheme": "Thème / chapitre (à compléter)"
+        "workTitle": "Étude biblique ",
+        "chapterOrTheme": "Thème /Chapitre"
       },
       "sections": {
         "paragraphs": [
@@ -109,12 +109,12 @@
         "verses": [
           {
             "memberId": "victorine",
-            "text": "Versets bibliques (à compléter)"
+            "text": "Versets bibliques "
           }
         ],
         "review": [
           {
-            "memberId": "canine",
+            "memberId": "carine",
             "text": "Réponse question 1"
           },
           {
@@ -127,7 +127,7 @@
           }
         ]
       },
-      "notes": "Remplace cet exemple avec vos vraies données."
+      "notes": "RAS"
     }
   ]
 }
