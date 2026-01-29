@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Étude biblique — Planning famille</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23ffffff' d='M20 10h18c6 0 10 4 10 10v34c-3-2-6-3-10-3H20c-6 0-10 4-10 10V20c0-6 4-10 10-10Z'/%3E%3Cpath fill='%23000000' opacity='.25' d='M20 10h18c6 0 10 4 10 10v31c-3-2-6-3-10-3H20c-6 0-10 4-10 10V20c0-6 4-10 10-10Z'/%3E%3Cpath fill='%23ffffff' d='M31 18h2v10h10v2H33v10h-2V30H21v-2h10V18Z'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <path d="M20 10h18c6 0 10 4 10 10v34c-3-2-6-3-10-3H20c-6 0-10 4-10 10V20c0-6 4-10 10-10Z"/>
+            <path class="accent" d="M31 18h2v10h10v2H33v10h-2V30H21v-2h10V18Z"/>
+          </svg>
+        </div>
+        <div class="brand__text">
+          <div class="brand__title" id="appTitle">Étude biblique</div>
+          <div class="brand__sub" id="todayLine">—</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav__link is-active" href="./index.html">Planning</a>
+        <a class="nav__link" href="./admin.html">Admin</a>
+        <button class="iconbtn" id="themeBtn" title="Basculer thème" aria-label="Basculer thème">
+          <svg viewBox="0 0 24 24" class="icon">
+            <path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0-16h0m0 20h0M2 12h0m20 12h0M4.2 4.2h0m15.6 15.6h0M19.8 4.2h0M4.2 19.8h0" />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="panel">
+      <div class="panel__row">
+        <div class="field">
+          <label for="dateInput">Date</label>
+          <input id="dateInput" type="date" />
+        </div>
+
+        <div class="field">
+          <label for="viewMode">Vue</label>
+          <select id="viewMode">
+            <option value="day">Jour</option>
+            <option value="week">Semaine</option>
+          </select>
+        </div>
+
+        <div class="field grow">
+          <label for="memberSelect">Filtrer par membre</label>
+          <select id="memberSelect"></select>
+        </div>
+
+        <div class="field grow">
+          <label for="searchInput">Recherche (nom / paragraphe)</label>
+          <input id="searchInput" type="search" placeholder="Ex: Yann ou §12" />
+        </div>
+
+        <div class="panel__actions">
+          <button class="btn" id="todayBtn">Aujourd’hui</button>
+          <button class="btn ghost" id="printBtn">Imprimer</button>
+        </div>
+      </div>
+      <div class="hint muted">
+        Astuce: vous pouvez épingler cette page sur l’écran d’accueil du téléphone (iPhone/Android).
+      </div>
+    </section>
+
+    <section class="card" id="heroCard">
+      <div class="hero">
+        <div class="hero__left">
+          <h1 class="h1" id="viewTitle">—</h1>
+          <p class="muted" id="subtitle">—</p>
+          <div class="chips" id="chips"></div>
+        </div>
+        <div class="hero__right">
+          <div class="stat">
+            <div class="stat__k">Paragraphes</div>
+            <div class="stat__v" id="countParagraphs">0</div>
+          </div>
+          <div class="stat">
+            <div class="stat__k">Versets</div>
+            <div class="stat__v" id="countVerses">0</div>
+          </div>
+          <div class="stat">
+            <div class="stat__k">Révision</div>
+            <div class="stat__v" id="countReview">0</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="contentCard">
+      <div id="content"></div>
+    </section>
+
+    <footer class="footer muted">
+      <span>© Famille — Planning d’étude biblique</span>
+      <span>•</span>
+      <span>Déploiement recommandé: GitHub Pages</span>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

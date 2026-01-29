@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Admin — Étude biblique</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <path d="M20 10h18c6 0 10 4 10 10v34c-3-2-6-3-10-3H20c-6 0-10 4-10 10V20c0-6 4-10 10-10Z"/>
+            <path class="accent" d="M31 18h2v10h10v2H33v10h-2V30H21v-2h10V18Z"/>
+          </svg>
+        </div>
+        <div class="brand__text">
+          <div class="brand__title">Admin</div>
+          <div class="brand__sub muted">Gérer membres + planning, puis exporter plan.json</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav__link" href="./index.html">Planning</a>
+        <a class="nav__link is-active" href="./admin.html">Admin</a>
+        <button class="iconbtn" id="themeBtn" title="Basculer thème" aria-label="Basculer thème">
+          <svg viewBox="0 0 24 24" class="icon">
+            <path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0-16h0m0 20h0M2 12h0m20 12h0M4.2 4.2h0m15.6 15.6h0M19.8 4.2h0M4.2 19.8h0" />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="card">
+      <div class="row wrap gap">
+        <div class="field grow">
+          <label for="familyName">Nom / Titre du site</label>
+          <input id="familyName" class="input" placeholder="Ex: Étude biblique en famille" />
+        </div>
+        <div class="field">
+          <label for="timezone">Fuseau horaire</label>
+          <input id="timezone" class="input" placeholder="Europe/Paris" />
+        </div>
+        <div class="panel__actions">
+          <button class="btn" id="saveMetaBtn">Enregistrer</button>
+        </div>
+      </div>
+      <div class="muted hint">Cette page ne peut pas modifier GitHub automatiquement (pas de serveur). Elle sauvegarde sur cet appareil et vous permet d’exporter un plan.json à re-uploader sur GitHub.</div>
+    </section>
+
+    <section class="grid2">
+      <section class="card">
+        <div class="card__head">
+          <h2 class="h2">Membres</h2>
+          <div class="muted">Ajouter / renommer / supprimer</div>
+        </div>
+
+        <div class="row wrap gap">
+          <div class="field grow">
+            <label for="newMemberName">Nom</label>
+            <input id="newMemberName" class="input" placeholder="Ex: Papa" />
+          </div>
+          <div class="panel__actions">
+            <button class="btn" id="addMemberBtn">Ajouter</button>
+          </div>
+        </div>
+
+        <div class="list" id="membersList"></div>
+      </section>
+
+      <section class="card">
+        <div class="card__head">
+          <h2 class="h2">Planning par date</h2>
+          <div class="muted">Créer / modifier une journée</div>
+        </div>
+
+        <div class="row wrap gap">
+          <div class="field">
+            <label for="datePick">Date</label>
+            <input id="datePick" type="date" />
+          </div>
+          <div class="field grow">
+            <label for="dayTitle">Titre (optionnel)</label>
+            <input id="dayTitle" class="input" placeholder="Ex: Vendredi 30/01/2026" />
+          </div>
+        </div>
+
+        <div class="row wrap gap">
+          <div class="field grow">
+            <label for="workTitle">Ouvrage / Étude (optionnel)</label>
+            <input id="workTitle" class="input" placeholder="Ex: Étude biblique — chapitre ..." />
+          </div>
+          <div class="field grow">
+            <label for="theme">Thème / chapitre (optionnel)</label>
+            <input id="theme" class="input" placeholder="Ex: Chapitre 12 — ..." />
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="row wrap gap">
+          <div class="field">
+            <label for="sectionPick">Section</label>
+            <select id="sectionPick">
+              <option value="paragraphs">Paragraphes</option>
+              <option value="verses">Versets bibliques</option>
+              <option value="review">Réponses de révision</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="memberPick">Membre</label>
+            <select id="memberPick"></select>
+          </div>
+          <div class="field grow">
+            <label for="textPick">Contenu</label>
+            <input id="textPick" class="input" placeholder="Ex: 5, 19  |  ou  Réponse Q2" />
+          </div>
+          <div class="panel__actions">
+            <button class="btn" id="addItemBtn">Ajouter</button>
+          </div>
+        </div>
+
+        <div class="list" id="dayItems"></div>
+      </section>
+    </section>
+
+    <section class="card">
+      <div class="card__head">
+        <h2 class="h2">Import / Export</h2>
+        <div class="muted">Partager/mettre à jour sur GitHub</div>
+      </div>
+
+      <div class="row wrap gap">
+        <button class="btn" id="downloadBtn">Télécharger plan.json</button>
+
+        <label class="btn ghost" for="uploadInput" style="cursor:pointer;">Importer plan.json</label>
+        <input id="uploadInput" type="file" accept="application/json" style="display:none;" />
+
+        <button class="btn danger" id="resetBtn">Réinitialiser (local)</button>
+      </div>
+
+      <div class="muted hint">
+        Workflow recommandé: 1) éditez ici → 2) “Télécharger plan.json” → 3) remplacez plan.json dans GitHub → 4) commit.
+      </div>
+    </section>
+
+    <footer class="footer muted">
+      <span>Admin local • Export nécessaire pour mettre à jour le site en ligne</span>
+    </footer>
+  </main>
+
+  <script src="./admin.js"></script>
+</body>
+</html>

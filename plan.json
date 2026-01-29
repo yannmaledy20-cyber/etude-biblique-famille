@@ -1,0 +1,133 @@
+{
+  "familyName": "Étude biblique en famille",
+  "timezone": "Europe/Paris",
+  "members": [
+    {
+      "id": "annick_steffy",
+      "name": "Annick Steffy"
+    },
+    {
+      "id": "rosine",
+      "name": "Rosine"
+    },
+    {
+      "id": "teddy",
+      "name": "Teddy"
+    },
+    {
+      "id": "anne_vicky",
+      "name": "Anne Vicky"
+    },
+    {
+      "id": "karl_heinz",
+      "name": "Karl Heinz"
+    },
+    {
+      "id": "lynn",
+      "name": "Lynn"
+    },
+    {
+      "id": "marie_ange",
+      "name": "Marie Ange"
+    },
+    {
+      "id": "anne",
+      "name": "Anne"
+    },
+    {
+      "id": "yann",
+      "name": "Yann"
+    },
+    {
+      "id": "canine",
+      "name": "Canine"
+    },
+    {
+      "id": "victorine",
+      "name": "Victorine"
+    },
+    {
+      "id": "lise",
+      "name": "Lise"
+    }
+  ],
+  "assignments": [
+    {
+      "date": "2026-01-30",
+      "title": "Vendredi 30/01/2026",
+      "study": {
+        "workTitle": "Étude biblique (exemple)",
+        "chapterOrTheme": "Thème / chapitre (à compléter)"
+      },
+      "sections": {
+        "paragraphs": [
+          {
+            "memberId": "anne_vicky",
+            "text": "1, 2, 14"
+          },
+          {
+            "memberId": "teddy",
+            "text": "3, 8"
+          },
+          {
+            "memberId": "lise",
+            "text": "4"
+          },
+          {
+            "memberId": "rosine",
+            "text": "5, 19"
+          },
+          {
+            "memberId": "karl_heinz",
+            "text": "6, 15"
+          },
+          {
+            "memberId": "lynn",
+            "text": "7, 16"
+          },
+          {
+            "memberId": "marie_ange",
+            "text": "9, 17"
+          },
+          {
+            "memberId": "anne",
+            "text": "10, 18"
+          },
+          {
+            "memberId": "yann",
+            "text": "11"
+          },
+          {
+            "memberId": "annick_steffy",
+            "text": "12"
+          },
+          {
+            "memberId": "canine",
+            "text": "13"
+          }
+        ],
+        "verses": [
+          {
+            "memberId": "victorine",
+            "text": "Versets bibliques (à compléter)"
+          }
+        ],
+        "review": [
+          {
+            "memberId": "canine",
+            "text": "Réponse question 1"
+          },
+          {
+            "memberId": "yann",
+            "text": "Réponse question 2"
+          },
+          {
+            "memberId": "annick_steffy",
+            "text": "Réponse question 3"
+          }
+        ]
+      },
+      "notes": "Remplace cet exemple avec vos vraies données."
+    }
+  ]
+}
