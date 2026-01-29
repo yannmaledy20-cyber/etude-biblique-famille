@@ -65,16 +65,20 @@ body{
 /* Background glow */
 .bg{
   position: fixed;
-  inset:-45vh -25vw auto -25vw;
-  height: 85vh;
+  inset: 0;                 /* couvre tout l’écran */
+  height: 100vh;
+  width: 100vw;
+
   background:
-    radial-gradient(55% 55% at 20% 20%, rgba(75,123,255,.26), transparent 60%),
-    radial-gradient(45% 45% at 75% 30%, rgba(92,214,255,.20), transparent 62%),
-    radial-gradient(35% 35% at 35% 75%, rgba(124,92,255,.16), transparent 62%);
+    radial-gradient(60% 45% at 15% 10%, rgba(75,123,255,.28), transparent 60%),
+    radial-gradient(55% 45% at 85% 15%, rgba(92,214,255,.22), transparent 62%),
+    radial-gradient(45% 45% at 45% 85%, rgba(124,92,255,.18), transparent 62%);
+
   filter: blur(34px);
-  z-index:-1;
-  pointer-events:none;
+  z-index: -1;
+  pointer-events: none;
 }
+
 
 .container{
   width: min(1100px, calc(100% - 32px));
