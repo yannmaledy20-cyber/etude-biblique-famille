@@ -22,7 +22,7 @@ function countParagraphsText(text){
     return " "; // retire la plage du texte pour éviter double comptage
   });
 
-  // Compte les nombres restants: "6, 15" => 2
+  // Compte les nombres restants: "6, 15" => 2 
   const nums = t.match(/\d+/g);
   if (nums) count += nums.length;
 
