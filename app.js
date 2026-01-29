@@ -6,6 +6,32 @@
 const PLAN_URL = "./plan.json";
 const THEME_KEY = "eb_theme_v1";
 
+function countParagraphsText(text){
+  let t = (text ?? "").toString();
+  t = t.replace(/[§]/g, "");      // enlève §
+  t = t.replace(/[–—]/g, "-");    // remplace tirets longs par "-"
+  t = t.replace(/\s+/g, " ").trim();
+
+  let count = 0;
+
+  // Compte les plages: 1-3 => 3 paragraphes
+  const rangeRe = /(\d+)\s*-\s*(\d+)/g;
+  t = t.replace(rangeRe, (_, a, b) => {
+    const A = Number(a), B = Number(b);
+    count += Math.abs(B - A) + 1;
+    return " "; // retire la plage du texte pour éviter double comptage
+  });
+
+  // Compte les nombres restants: "6, 15" => 2
+  const nums = t.match(/\d+/g);
+  if (nums) count += nums.length;
+
+  return count;
+}
+
+
+
+
 function $(id){ return document.getElementById(id); }
 
 function setTheme(theme){
@@ -88,11 +114,19 @@ function filterEntries(entries, plan, memberId, q){
 
 function computeCounts(day, plan, memberId, q){
   const s = day?.sections || {};
-  const paragraphs = filterEntries(s.paragraphs, plan, memberId, q).length;
-  const verses = filterEntries(s.verses, plan, memberId, q).length;
-  const review = filterEntries(s.review, plan, memberId, q).length;
+  const pEntries = filterEntries(s.paragraphs, plan, memberId, q);
+  const vEntries = filterEntries(s.verses, plan, memberId, q);
+  const rEntries = filterEntries(s.review, plan, memberId, q);
+
+  const paragraphs = pEntries.reduce((sum, e) => sum + countParagraphsText(e.text), 0);
+
+  // Pour versets/révision, on garde le nombre d’entrées (souvent du texte, pas des numéros)
+  const verses = vEntries.length;
+  const review = rEntries.length;
+
   return { paragraphs, verses, review };
 }
+
 
 function renderChips(day){
   const root = $("chips");
