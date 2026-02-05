@@ -129,5 +129,83 @@
       },
       "notes": "RAS"
     }
+  ], [
+    {
+      "date": "2026-02-06",
+      "title": "Vendredi 06/02/2026",
+      "study": {
+        "workTitle": "Étude biblique ",
+        "chapterOrTheme": ""
+      },
+      "sections": {
+        "paragraphs": [
+          {
+            "memberId": "anne_vicky",
+            "text": "1, 2"
+          },
+          {
+            "memberId": "teddy",
+            "text": "9, 16"
+          },
+          {
+            "memberId": "lise",
+            "text": "3"
+          },
+          {
+            "memberId": "rosine",
+            "text": "4, 14"
+          },
+          {
+            "memberId": "karl_heinz",
+            "text": "11"
+          },
+          {
+            "memberId": "lynn",
+            "text": "10"
+          },
+          {
+            "memberId": "marie_ange",
+            "text": "5, 13"
+          },
+          {
+            "memberId": "anne",
+            "text": "7, 8"
+          },
+          {
+            "memberId": "yann",
+            "text": "12"
+          },
+          {
+            "memberId": "annick_steffy",
+            "text": "6, 17"
+          },
+          {
+            "memberId": "carine",
+            "text": "15"
+          }
+        ],
+        "verses": [
+          {
+            "memberId": "victorine",
+            "text": "Versets bibliques "
+          }
+        ],
+        "review": [
+          {
+            "memberId": "Karl",
+            "text": "Réponse question 1"
+          },
+          {
+            "memberId": "yann",
+            "text": "Réponse question 2"
+          },
+          {
+            "memberId": "Lynn",
+            "text": "Réponse question 3"
+          }
+        ]
+      },
+      "notes": "RAS"
+    }
   ]
 }
