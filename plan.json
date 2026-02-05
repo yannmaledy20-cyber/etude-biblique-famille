@@ -2,210 +2,83 @@
   "familyName": "Étude biblique en famille",
   "timezone": "Europe/Paris",
   "members": [
-    {
-      "id": "annick_steffy",
-      "name": "Annick Steffy"
-    },
-    {
-      "id": "rosine",
-      "name": "Rosine"
-    },
-    {
-      "id": "teddy",
-      "name": "Teddy"
-    },
-    {
-      "id": "anne_vicky",
-      "name": "Anne Vicky"
-    },
-    {
-      "id": "karl_heinz",
-      "name": "Karl Heinz"
-    },
-    {
-      "id": "lynn",
-      "name": "Lynn"
-    },
-    {
-      "id": "marie_ange",
-      "name": "Marie Ange"
-    },
-    {
-      "id": "anne",
-      "name": "Anne"
-    },
-    {
-      "id": "yann",
-      "name": "Yann"
-    },
-    {
-      "id": "canine",
-      "name": "Canine"
-    },
-    {
-      "id": "victorine",
-      "name": "Victorine"
-    },
-    {
-      "id": "lise",
-      "name": "Lise"
-    }
+    { "id": "annick_steffy", "name": "Annick Steffy" },
+    { "id": "rosine", "name": "Rosine" },
+    { "id": "teddy", "name": "Teddy" },
+    { "id": "anne_vicky", "name": "Anne Vicky" },
+    { "id": "karl_heinz", "name": "Karl Heinz" },
+    { "id": "lynn", "name": "Lynn" },
+    { "id": "marie_ange", "name": "Marie Ange" },
+    { "id": "anne", "name": "Anne" },
+    { "id": "yann", "name": "Yann" },
+    { "id": "canine", "name": "Canine" },
+    { "id": "victorine", "name": "Victorine" },
+    { "id": "lise", "name": "Lise" }
   ],
   "assignments": [
     {
       "date": "2026-01-30",
       "title": "Vendredi 30/01/2026",
       "study": {
-        "workTitle": "Étude biblique ",
+        "workTitle": "Étude biblique",
         "chapterOrTheme": "You Are Someone Very Precious"
       },
       "sections": {
         "paragraphs": [
-          {
-            "memberId": "anne_vicky",
-            "text": "1, 2, 14"
-          },
-          {
-            "memberId": "teddy",
-            "text": "3, 8"
-          },
-          {
-            "memberId": "lise",
-            "text": "4"
-          },
-          {
-            "memberId": "rosine",
-            "text": "5, 19"
-          },
-          {
-            "memberId": "karl_heinz",
-            "text": "6, 15"
-          },
-          {
-            "memberId": "lynn",
-            "text": "7, 16"
-          },
-          {
-            "memberId": "marie_ange",
-            "text": "9, 17"
-          },
-          {
-            "memberId": "anne",
-            "text": "10, 18"
-          },
-          {
-            "memberId": "yann",
-            "text": "11"
-          },
-          {
-            "memberId": "annick_steffy",
-            "text": "12"
-          },
-          {
-            "memberId": "canine",
-            "text": "13"
-          }
+          { "memberId": "anne_vicky", "text": "1, 2, 14" },
+          { "memberId": "teddy", "text": "3, 8" },
+          { "memberId": "lise", "text": "4" },
+          { "memberId": "rosine", "text": "5, 19" },
+          { "memberId": "karl_heinz", "text": "6, 15" },
+          { "memberId": "lynn", "text": "7, 16" },
+          { "memberId": "marie_ange", "text": "9, 17" },
+          { "memberId": "anne", "text": "10, 18" },
+          { "memberId": "yann", "text": "11" },
+          { "memberId": "annick_steffy", "text": "12" },
+          { "memberId": "canine", "text": "13" }
         ],
         "verses": [
-          {
-            "memberId": "victorine",
-            "text": "Versets bibliques "
-          }
+          { "memberId": "victorine", "text": "Versets bibliques" }
         ],
         "review": [
-          {
-            "memberId": "carine",
-            "text": "Réponse question 1"
-          },
-          {
-            "memberId": "yann",
-            "text": "Réponse question 2"
-          },
-          {
-            "memberId": "annick_steffy",
-            "text": "Réponse question 3"
-          }
+          { "memberId": "canine", "text": "Réponse question 1" },
+          { "memberId": "yann", "text": "Réponse question 2" },
+          { "memberId": "annick_steffy", "text": "Réponse question 3" }
         ]
       },
-      "notes": "RAS"
-    }
-  ], [
+      "notes": ""
+    },
     {
       "date": "2026-02-06",
       "title": "Vendredi 06/02/2026",
       "study": {
-        "workTitle": "Étude biblique ",
+        "workTitle": "Étude biblique",
         "chapterOrTheme": ""
       },
       "sections": {
         "paragraphs": [
-          {
-            "memberId": "anne_vicky",
-            "text": "1, 2"
-          },
-          {
-            "memberId": "teddy",
-            "text": "9, 16"
-          },
-          {
-            "memberId": "lise",
-            "text": "3"
-          },
-          {
-            "memberId": "rosine",
-            "text": "4, 14"
-          },
-          {
-            "memberId": "karl_heinz",
-            "text": "11"
-          },
-          {
-            "memberId": "lynn",
-            "text": "10"
-          },
-          {
-            "memberId": "marie_ange",
-            "text": "5, 13"
-          },
-          {
-            "memberId": "anne",
-            "text": "7, 8"
-          },
-          {
-            "memberId": "yann",
-            "text": "12"
-          },
-          {
-            "memberId": "annick_steffy",
-            "text": "6, 17"
-          },
-          {
-            "memberId": "carine",
-            "text": "15"
-          }
+          { "memberId": "anne_vicky", "text": "1, 2" },
+          { "memberId": "lise", "text": "3" },
+          { "memberId": "rosine", "text": "4, 14" },
+          { "memberId": "marie_ange", "text": "5, 13" },
+          { "memberId": "annick_steffy", "text": "6, 17" },
+          { "memberId": "anne", "text": "7, 8" },
+          { "memberId": "teddy", "text": "9, 16" },
+          { "memberId": "lynn", "text": "10" },
+          { "memberId": "karl_heinz", "text": "11" },
+          { "memberId": "yann", "text": "12" },
+          { "memberId": "canine", "text": "15" }
         ],
         "verses": [
-          {
-            "memberId": "victorine",
-            "text": "Versets bibliques "
-          }
+          { "memberId": "victorine", "text": "Versets bibliques" }
         ],
         "review": [
-          {
-            "memberId": "Karl",
-            "text": "Réponse question 1"
-          },
-          {
-            "memberId": "yann",
-            "text": "Réponse question 2"
-          },
-          {
-            "memberId": "Lynn",
-            "text": "Réponse question 3"
-          }
+          { "memberId": "karl_heinz", "text": "Réponse question 1" },
+          { "memberId": "yann", "text": "Réponse question 2" },
+          { "memberId": "lynn", "text": "Réponse question 3" }
         ]
       },
-      "notes": "RAS"
+      "notes": ""
     }
   ]
 }
