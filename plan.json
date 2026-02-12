@@ -79,6 +79,37 @@
         ]
       },
       "notes": ""
+    },{
+      "date": "2026-02-13",
+      "title": "Vendredi 13/02/2026",
+      "study": {
+        "workTitle": "Étude biblique",
+        "chapterOrTheme": "The Book of Job Can Help You When You Give Counsel"
+      },
+      "sections": {
+        "paragraphs": [
+          { "memberId": "anne_vicky", "text": "1, 2" },
+          { "memberId": "lise", "text": "13" },
+          { "memberId": "rosine", "text": "5, 16" },
+          { "memberId": "marie_ange", "text": 4, 14, 15" },
+          { "memberId": "annick_steffy", "text": "9" },
+          { "memberId": "anne", "text": "8" },
+          { "memberId": "teddy", "text": "7" },
+          { "memberId": "lynn", "text": "3, 12" },
+          { "memberId": "karl_heinz", "text": "6" },
+          { "memberId": "yann", "text": "10" },
+          { "memberId": "canine", "text": "11" }
+        ],
+        "verses": [
+          { "memberId": "victorine", "text": "Versets bibliques" }
+        ],
+        "review": [
+          { "memberId": "karl_heinz", "text": "Réponse question 1" },
+          { "memberId": "yann", "text": "Réponse question 2" },
+          { "memberId": "teddy", "text": "Réponse question 3" }
+        ]
+      },
+      "notes": ""
     }
   ]
 }
