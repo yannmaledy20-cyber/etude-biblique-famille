@@ -141,6 +141,37 @@
         ]
       },
       "notes": ""
+    },{
+      "date": "2026-03-13",
+      "title": "Vendredi 13/03/2026",
+      "study": {
+        "workTitle": "Étude biblique",
+        "chapterOrTheme": "You can successful fight negative feelings"
+      },
+      "sections": {
+        "paragraphs": [
+          { "memberId": "anne_vicky", "text": "10" },
+          { "memberId": "lise", "text": "18" },
+          { "memberId": "rosine", "text": "12, 19" },
+          { "memberId": "marie_ange", "text": "3, 13" },
+          { "memberId": "annick_steffy", "text": "5,11,17" },
+          { "memberId": "anne", "text": "6,15" },
+          { "memberId": "teddy", "text": "9" },
+          { "memberId": "lynn", "text": "8, 13, 14" },
+          { "memberId": "karl_heinz", "text": "1, 2, 11" },
+          { "memberId": "yann", "text": "4, 20" },
+          { "memberId": "carine", "text": "7, 16" }
+        ],
+        "verses": [
+          { "memberId": "victorine", "text": "Versets bibliques" }
+        ],
+        "review": [
+          { "memberId": "teddy", "text": "Réponse question 1" },
+          { "memberId": "rosine", "text": "Réponse question 2" },
+          { "memberId": "anne_vicky", "text": "Réponse question 3" }
+        ]
+      },
+      "notes": ""
     }
   ]
 }
