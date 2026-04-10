@@ -171,6 +171,37 @@
         ]
       },
       "notes": ""
+    },{
+      "date": "2026-04-11",
+      "title": "Vendredi 10/04/2026",
+      "study": {
+        "workTitle": "Étude biblique",
+        "chapterOrTheme": ""
+      },
+      "sections": {
+        "paragraphs": [
+          { "memberId": "anne_vicky", "text": "5,13" },
+          { "memberId": "rosine", "text": "4" },
+          { "memberId": "lise", "text": "16" },
+          { "memberId": "marie_ange", "text": "6, 17" },
+          { "memberId": "annick_steffy", "text": "10, 18" },
+          { "memberId": "anne", "text": "7" },
+          { "memberId": "teddy", "text": "3,11" },
+          { "memberId": "lynn", "text": "9" },
+          { "memberId": "karl_heinz", "text": "1, 2, 12" },
+          { "memberId": "yann", "text": "14, 15" },
+          { "memberId": "carine", "text": "8, 19" }
+        ],
+        "verses": [
+          { "memberId": "victorine", "text": "Versets bibliques" }
+        ],
+        "review": [
+          { "memberId": "rosine", "text": "Réponse question 1" },
+          { "memberId": "lynn", "text": "Réponse question 2" },
+          { "memberId": "anne", "text": "Réponse question 3" }
+        ]
+      },
+      "notes": ""
     }
   ]
 }
